@@ -1,7 +1,6 @@
 {
   "name": "react-homework-template",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://Inna-Mykytiuk.github.io/Responsive-portfolio-website/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
