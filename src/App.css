@@ -643,3 +643,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.react-multiple-carousel__arrow--left {
+  left: calc(1% + 1px);
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px);
+}
