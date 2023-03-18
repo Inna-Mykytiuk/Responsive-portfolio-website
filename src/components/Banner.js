@@ -7,48 +7,49 @@ import headerImg from '../assets/img/header-img.svg';
 import { useState, useEffect } from 'react';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
+  const [rotationIndex, setRotationIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ['Web Developer', 'Freelancer'];
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const rotatingTexts = ['Web Developer', 'Freelancer'];
+  const [currentText, setCurrentText] = useState('');
+  const [typingSpeed, setTypingSpeed] = useState(300 - Math.random() * 100);
+  const [currentIndex, setCurrentIndex] = useState(1);
   const period = 2000;
 
   useEffect(() => {
+    const tick = () => {
+      const i = rotationIndex % rotatingTexts.length;
+      const fullText = rotatingTexts[i];
+
+      let updatedText = isDeleting
+        ? fullText.substring(0, currentText.length - 1)
+        : fullText.substring(0, currentText.length + 1);
+
+      setCurrentText(updatedText);
+
+      if (isDeleting) {
+        setTypingSpeed(prevTypingSpeed => prevTypingSpeed / 2);
+      }
+
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setCurrentIndex(prevIndex => prevIndex - 1);
+        setTypingSpeed(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setRotationIndex(prevRotationIndex => prevRotationIndex + 1);
+        setCurrentIndex(1);
+        setTypingSpeed(500);
+      } else {
+        setCurrentIndex(prevIndex => prevIndex + 1);
+      }
+    };
+
     let ticker = setInterval(() => {
       tick();
-    }, delta);
+    }, typingSpeed);
+
     return () => clearInterval(ticker);
-  }, [text]);
-
-  const tick = () => {
-    const i = loopNum % toRotate.length;
-    const fullText = toRotate[i];
-
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  };
+  }, [currentText, isDeleting, rotationIndex, rotatingTexts, typingSpeed]);
 
   return (
     //розмітка секції
@@ -59,7 +60,7 @@ export const Banner = () => {
             <span className="tagLine">Welcome to my Portfolio</span>
             <h1>
               {`Hi I'm TokIo `}
-              <span className="wrap">{text}</span>
+              <span className="wrap">{currentText}</span>
             </h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
