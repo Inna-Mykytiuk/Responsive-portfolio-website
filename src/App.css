@@ -31,9 +31,11 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  /* background-color: #26313d !important; */
+  /* background-color: #26313d !important; */
+  background-color: #1c2126 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Centra', sans-serif;
 }
 
 h1,
@@ -106,11 +108,13 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32s ease-in-out;
+  /* transition: 0.32s ease-in-out; */
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+
+  backdrop-filter: blur(10px);
+  background-color: #00466e1a;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -179,6 +183,7 @@ span.navbar-text {
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  /* box-shadow: inset 2px 2px 3px #babecc, inset -3px -3px 7px #fff; */
 }
 .navbar-text button span {
   z-index: 1;
@@ -188,14 +193,15 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #fedef0;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(74, 47, 189, 0.5);
 }
 .navbar-text button:hover::before {
   content: '';
@@ -252,8 +258,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 200px 0 150px 0;
+  /* background-image: url('./assets/img/banner-bg.png'); */
+  background-image: url('./assets/img/hero-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -281,7 +288,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #b8b8b8;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -329,7 +336,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #26313d;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

@@ -3,7 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 //імпорт іконки
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 //імпорт героя
-import headerImg from '../assets/img/header-img.svg';
+// import headerImg from '../assets/img/header-img.svg';
+import headerImg from '../assets/img/sakura.svg';
 import { useState, useEffect } from 'react';
 
 export const Banner = () => {
