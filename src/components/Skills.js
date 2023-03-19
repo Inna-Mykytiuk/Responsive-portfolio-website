@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import meter1 from '../assets/img/meter1.png';
 import meter2 from '../assets/img/meter2.png';
 import meter3 from '../assets/img/meter3.png';
+import meter4 from '../assets/img/meter4.png';
 import colorSharp from '../assets/img/color-sharp.png';
 
 export const Skills = () => {
@@ -47,19 +48,19 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="Img" />
-                  <h5>Web Development</h5>
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Img" />
-                  <h5>Brand Identity</h5>
+                  <h5>Java Script</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Img" />
-                  <h5>Logo Design</h5>
+                  <h5>SASSDesign</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Img" />
-                  <h5>Web Development</h5>
+                  <img src={meter4} alt="Img" />
+                  <h5>SASS</h5>
                 </div>
               </Carousel>
             </div>
