@@ -10,32 +10,32 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
-      title: 'Business Startup',
+      title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
@@ -68,13 +68,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Portfolio</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">My true passion</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">About me</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -90,22 +90,58 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          As I gazed upon the web page I had just finished
+                          designing, a sense of pride and fulfillment washed
+                          over me. There's something about web development that
+                          just clicks with me - the endless possibilities, the
+                          creative freedom, the challenge of problem-solving.
+                          It's more than just a job or a hobby; it's a passion
+                          that consumes me. Day and night, I spend hours
+                          perfecting my craft. I immerse myself in coding
+                          tutorials, experimenting with different technologies,
+                          and brainstorming new ideas. I'm always striving to
+                          learn more, to stay on top of the latest trends and
+                          best practices, and to push myself to be the best web
+                          developer I can be. It's not always easy - there are
+                          times when I hit roadblocks and feel frustrated, or
+                          when I have to put in long hours to meet a deadline.
+                          But even then, I'm fueled by my love for web
+                          development and the satisfaction of creating something
+                          from scratch. To others, it may seem like just another
+                          job, but to me, it's a way of life. It's a calling
+                          that I'm grateful to have discovered, and I know I'll
+                          be doing this for years to come. After all, when you
+                          find something that you're truly passionate about,
+                          it's not just a job - it's a part of who you are.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          As I gazed upon the web page I had just finished
+                          designing, a sense of pride and fulfillment washed
+                          over me. There's something about web development that
+                          just clicks with me - the endless possibilities, the
+                          creative freedom, the challenge of problem-solving.
+                          It's more than just a job or a hobby; it's a passion
+                          that consumes me. Day and night, I spend hours
+                          perfecting my craft. I immerse myself in coding
+                          tutorials, experimenting with different technologies,
+                          and brainstorming new ideas. I'm always striving to
+                          learn more, to stay on top of the latest trends and
+                          best practices, and to push myself to be the best web
+                          developer I can be. It's not always easy - there are
+                          times when I hit roadblocks and feel frustrated, or
+                          when I have to put in long hours to meet a deadline.
+                          But even then, I'm fueled by my love for web
+                          development and the satisfaction of creating something
+                          from scratch. To others, it may seem like just another
+                          job, but to me, it's a way of life. It's a calling
+                          that I'm grateful to have discovered, and I know I'll
+                          be doing this for years to come. After all, when you
+                          find something that you're truly passionate about,
+                          it's not just a job - it's a part of who you are.
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
