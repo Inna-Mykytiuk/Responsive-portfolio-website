@@ -37,9 +37,12 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
+                Coming to my skills I know CSS, HTML, JS. Also, I have mastered
+                React and Node.js. <br></br>I have been coding for 10 months and
+                during this time I have done 3 successful team projects and 7
+                individual ones.<br></br>
+                Due to this I am good at core technical skills, organizational
+                ethics and discipline.
               </p>
               <Carousel
                 responsive={responsive}
