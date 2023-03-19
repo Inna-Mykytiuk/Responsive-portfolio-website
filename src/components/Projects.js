@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
-import projImg1 from '../assets/img/hero-bg.jpg';
-import projImg2 from '../assets/img/project-img2.png';
-import projImg3 from '../assets/img/project-img3.png';
+import projImg1 from '../assets/img/ocean.JPG';
+import projImg2 from '../assets/img/weather.jpg';
+import projImg3 from '../assets/img/mimino.JPG';
 // import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,40 +11,43 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project',
-      description: 'Design & Development',
+      title: 'Save the Ocean',
+      description: 'Informative and visually stunning website!',
       imgUrl: projImg1,
+      url: 'https://inna-mykytiuk.github.io/Ocean/',
     },
     {
       id: 2,
-      title: 'Project',
-      description: 'Design & Development',
-      imgUrl: projImg1,
+      title: 'Weather App',
+      description: 'Simple solution for all your weather needs',
+      imgUrl: projImg2,
+      url: 'https://inna-mykytiuk.github.io/WeatherApp/',
     },
     {
       id: 3,
-      title: 'Project',
-      description: 'Design & Development',
-      imgUrl: projImg1,
+      title: 'Restaurant website',
+      description: 'Restaurant website team project. Made to order',
+      imgUrl: projImg3,
+      url: 'https://inna-mykytiuk.github.io/Restaurant-Mimino/',
     },
-    {
-      id: 4,
-      title: 'Project',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-    },
-    {
-      id: 5,
-      title: 'Project',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-    },
-    {
-      id: 6,
-      title: 'Project',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-    },
+    // {
+    //   id: 4,
+    //   title: 'Project',
+    //   description: 'Design & Development',
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Project',
+    //   description: 'Design & Development',
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Project',
+    //   description: 'Design & Development',
+    //   imgUrl: projImg1,
+    // },
   ];
 
   return (
@@ -60,7 +63,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
+                  <p className="project-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -97,7 +100,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
+                        <p className="project-text">
                           My name is Inna, and I, like most of you, decided to
                           change my life by 180 degrees, so I chose this path
                           and I am sure that I will follow it to the end I
@@ -112,11 +115,15 @@ export const Projects = () => {
                           related to writing code. What motivates me the most is
                           not the salary, but the opportunity to conquer new
                           heights, meet new people, and have a stable job for
-                          years, regardless of age.
+                          years, regardless of age. I chose the pseudonym TokIo,
+                          and I did not make a mistake in writing :) The first
+                          part Tok means electric current and reflects my
+                          character, love of action. The second syllable is my
+                          initials, Inna Olehivna.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
+                        <p className="project-text">
                           As I gazed upon the web page I had just finished
                           designing, a sense of pride and fulfillment washed
                           over me. There's something about web development that
