@@ -10,31 +10,37 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
   const projects = [
     {
+      id: 1,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
+      id: 2,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
+      id: 3,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
+      id: 4,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
+      id: 5,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
     },
     {
+      id: 6,
       title: 'Project',
       description: 'Design & Development',
       imgUrl: projImg1,
@@ -71,10 +77,10 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Portfolio</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">My true passion</Nav.Link>
+                        <Nav.Link eventKey="second">About me</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">About me</Nav.Link>
+                        <Nav.Link eventKey="third">My true passion</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -85,36 +91,28 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                          {projects.map((project, id) => {
+                            return <ProjectCard key={id} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <p>
-                          As I gazed upon the web page I had just finished
-                          designing, a sense of pride and fulfillment washed
-                          over me. There's something about web development that
-                          just clicks with me - the endless possibilities, the
-                          creative freedom, the challenge of problem-solving.
-                          It's more than just a job or a hobby; it's a passion
-                          that consumes me. Day and night, I spend hours
-                          perfecting my craft. I immerse myself in coding
-                          tutorials, experimenting with different technologies,
-                          and brainstorming new ideas. I'm always striving to
-                          learn more, to stay on top of the latest trends and
-                          best practices, and to push myself to be the best web
-                          developer I can be. It's not always easy - there are
-                          times when I hit roadblocks and feel frustrated, or
-                          when I have to put in long hours to meet a deadline.
-                          But even then, I'm fueled by my love for web
-                          development and the satisfaction of creating something
-                          from scratch. To others, it may seem like just another
-                          job, but to me, it's a way of life. It's a calling
-                          that I'm grateful to have discovered, and I know I'll
-                          be doing this for years to come. After all, when you
-                          find something that you're truly passionate about,
-                          it's not just a job - it's a part of who you are.
+                          My name is Inna, and I, like most of you, decided to
+                          change my life by 180 degrees, so I chose this path
+                          and I am sure that I will follow it to the end I
+                          worked for more than 10 years as an architect, and
+                          achieved considerable success in this, but the war
+                          changed everything, and I looked at life from another
+                          side. By a mystical path, I came to Front-end, and it
+                          fascinated me so much that I decided to master a new
+                          profession. I studied many specific programs for
+                          planning and designing buildings and structures - this
+                          allows me to independently bring my ideas to life
+                          related to writing code. What motivates me the most is
+                          not the salary, but the opportunity to conquer new
+                          heights, meet new people, and have a stable job for
+                          years, regardless of age.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
