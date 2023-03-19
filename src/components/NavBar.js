@@ -74,13 +74,13 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="#" className="social-link">
                   <img src={navIcon1} alt="icon" />
                 </a>
-                <a href="#">
+                <a href="#" className="social-link">
                   <img src={navIcon2} alt="icon" />
                 </a>
-                <a href="#">
+                <a href="#" className="social-link">
                   <img src={navIcon3} alt="icon" />
                 </a>
               </div>

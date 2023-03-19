@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 //імпорт героя
 // import headerImg from '../assets/img/header-img.svg';
-import headerImg from '../assets/img/sakura.svg';
+import headerImg from '../assets/img/flower1.png';
 import { useState, useEffect } from 'react';
 
 export const Banner = () => {
@@ -60,7 +60,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagLine">Welcome to my Portfolio</span>
             <h1>
-              {`Hi Hi I'm TokIo `}
+              `Hi! I'm {<span className="user-name"> TokIo </span>}
               <span className="wrap">{currentText}</span>
             </h1>
             <p>

@@ -14,6 +14,11 @@
   src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
+@font-face {
+  font-family: Amatic;
+  src: url('./assets/font/AmaticSC-Bold.ttf');
+  font-weight: 400;
+}
 
 /************ Default Css ************/
 * {
@@ -98,8 +103,16 @@ p.danger {
 /************ Navbar Css ************/
 
 .logo {
+  font-family: Amatic;
   color: #fff;
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.user-name {
+  font-family: Amatic;
+  color: #fff;
+  font-size: 80px;
   font-weight: 700;
 }
 
@@ -157,7 +170,7 @@ span.navbar-text {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fedef0;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -171,8 +184,10 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
+  /* filter: brightness(0) saturate(50%) invert(0%) sepia(7%) saturate(50%)
+    hue-rotate(346deg) brightness(50%) contrast(50%); */
+  filter: brightness(60%) saturate(0%) invert(0%) sepia(7%) saturate(0%)
+    hue-rotate(180deg) brightness(100%) contrast(50%);
 }
 .navbar-text button {
   font-weight: 700;
@@ -201,8 +216,9 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(74, 47, 189, 0.5);
+  color: #929191;
+  /* text-shadow: 1px 1px 1px rgba(74, 47, 189, 0.5); */
+  border: 1px solid #fedef0;
 }
 .navbar-text button:hover::before {
   content: '';
