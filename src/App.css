@@ -407,12 +407,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   transform: scale(1);
 }
 
-.skill h2 {
+.skill h2,
+.project h2 {
   font-family: Amatic;
   color: #fff;
   font-size: 80px;
   font-weight: 700;
+  text-align: center;
 }
+
 .skill p {
   color: #fff;
   font-size: 18px;
@@ -439,15 +442,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
-  background-color: black;
+  background-color: #314646;
 }
-.project h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-}
+
 .project p {
   color: #b8b8b8;
   font-size: 18px;
@@ -512,7 +511,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+
   overflow: hidden;
   margin-bottom: 24px;
 }
