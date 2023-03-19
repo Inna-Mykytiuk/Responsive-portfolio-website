@@ -64,13 +64,12 @@ export const Banner = () => {
               <span className="wrap">{currentText}</span>
             </h1>
             <p>
-              I'm full stack developer who is passionate about crafting elegant
-              and efficient solutions for complex problems. With a keen eye for
-              design and an insatiable thirst for new and interesting
-              challenges, always pushing the boundaries of what's possible.
-              Whether it's building sleek and intuitive user interfaces or
-              tackling tough backend architecture problems, I'm always up for
-              the task.
+              I'm full stack developer who is passionate about developing
+              elegant and efficient solutions to complex problems. With a keen
+              eye for design and an insatiable thirst for new and interesting
+              tasks, I always push the boundaries of what is possible. Whether
+              it's creating elegant and intuitive user interfaces or solving
+              interesting development tasks, I'm always up to the task.
             </p>
             <button onClick={() => console.log('connect')}>
               Let’s Connect <ArrowRightCircle size={25} />
