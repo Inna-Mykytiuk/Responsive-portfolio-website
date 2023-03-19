@@ -37,9 +37,10 @@ body {
   overflow-x: hidden;
   position: relative;
   /* background-color: #26313d !important; */
-  /* background-color: #26313d !important; */
   background-color: #161d24 !important;
+  /* background-color: #a7a9b6 !important; */
   /* background-color: rgba(15, 23, 27, 0.85) !important; */
+
   color: #fff !important;
   font-family: 'Centra', sans-serif;
 }
@@ -351,20 +352,31 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  margin-top: 0;
+  /* padding: 200px 0 150px 0; */
+  /* background-image: url('./assets/img/banner-bg.png'); */
+  background-image: url('./assets/img/flower1.png');
+  /* background-position: top center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 }
 .skill-bx {
-  background: #26313d;
-  border-radius: 64px;
+  /* background: #26313d; */
+  /* border-radius: 64px; */
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  backdrop-filter: blur(10px);
+  background-color: #5e65748c;
 }
 .skill h2 {
-  font-size: 45px;
+  font-family: Amatic;
+  color: #fff;
+  font-size: 80px;
   font-weight: 700;
 }
 .skill p {
-  color: #b8b8b8;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
