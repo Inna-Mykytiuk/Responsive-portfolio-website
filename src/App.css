@@ -194,7 +194,7 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
+  padding: 10px 5px;
   font-size: 18px;
   margin-left: 18px;
   position: relative;
@@ -274,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .navbar-toggler {
-  border: none;
+  border: none !important;
 }
 
 /************ Banner Css ************/
@@ -461,16 +461,18 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .project-text {
-  color: #b8b8b8;
+  /* color: #b8b8b8; */
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 55%;
+  width: 70%;
+  backdrop-filter: blur(20px);
+  background-color: #24343259;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  /* width: 72%; */
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -491,6 +493,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
   text-align: center;
+
   z-index: 0;
 }
 .project .nav.nav-pills .nav-link::before {
@@ -779,3 +782,20 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .react-multiple-carousel__arrow--right {
   right: calc(1% + 1px) !important;
 }
+
+.navbar-collapse {
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.ms-autochange {
+  margin: 5px !important;
+}
+
+/* .row {
+  gap: 20px;
+} */
