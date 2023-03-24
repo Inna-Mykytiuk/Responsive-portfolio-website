@@ -16,15 +16,15 @@ export const MusicButton = () => {
 
   const handleScroll = () => {
     const button = document.getElementById('music-button');
-    const currentPosition = window.pageYOffset + 200;
-    button.style.top = currentPosition + 'px';
+    const currentPosition = window.pageYOffset + 100;
+    button.style.top = currentPosition - 'px';
   };
 
   window.addEventListener('scroll', handleScroll);
 
   return (
     <div id="music-button" onClick={toggleAudio}>
-      {isPlaying ? 'Stop Music' : 'Play Music'}
+      {isPlaying ? 'Stop' : 'Play'}
       <audio id="audio">
         <source src={audio} type="audio/mpeg" />
       </audio>
