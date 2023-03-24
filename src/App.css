@@ -818,7 +818,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 #music-button {
   position: fixed;
-  top: 40%;
+  /* top: 50%; */
   right: 0;
   transform: translateY(-50%);
   padding: 10px;
@@ -834,9 +834,62 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background-color: #1db954;
 }
 
+@media screen and (min-width: 769px) {
+  #music-button {
+    /* display: block; */
+    top: 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #music-button {
     /* display: none; */
-    top: 25%;
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #music-button {
+    display: none;
+    /* top: 50%; */
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #music-button {
+    top: 85%;
+  }
+}
+
+@media screen and (max-height: 414px) {
+  .banner {
+    padding: 130px 0 100px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .user-name {
+    font-size: 40px;
+  }
+  .banner p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.1em;
+  }
+  #music-button {
+    top: 40%;
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .banner {
+    padding: 180px 0 100px 0;
+  }
+  .banner p {
+    width: 98%;
+  }
+  .banner h1 {
+    margin-bottom: 2px;
   }
 }
