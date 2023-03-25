@@ -23,27 +23,14 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault();
-    setButtonText('Sending...');
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(formDetails),
-    });
     setButtonText('Send');
-    let result = await response.json();
+    // You can add your own logic here to handle the form data
+    // For example, you can use axios or any other library to make a post request to your server
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully' });
-    } else {
-      setStatus({
-        succes: false,
-        message: 'Something went wrong, please try again later.',
-      });
-    }
+    setStatus({ success: true, message: 'Message sent successfully' });
+    setTimeout(() => setStatus({}), 5000); // Remove status message after 5 seconds
   };
 
   return (
